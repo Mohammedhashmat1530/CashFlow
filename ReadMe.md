@@ -1,4 +1,4 @@
-ideas to be established in this CashFlow (finance tracker project)
+## ideas to be established in this CashFlow (finance tracker project)
 
 <ul>
     <li>User Authentication:Users can sign up, log in, and log out.</li>
@@ -18,3 +18,14 @@ ideas to be established in this CashFlow (finance tracker project)
 
 
 </ul>
+
+## techlogies used
+
+
+<ul>
+    <li>Clerk</li>
+    <li>Mern</li>
+    <li>charts.js</li>
+    <li>nodemailer</li>
+</ul>
+
