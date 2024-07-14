@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Header, Announcement, Footer, Content, SideNav, LoadingScreen } from './components/index'
+import { Header, Announcement, Footer, Content, SideNav, LoadingScreen, HeaderInfo,InfoCards } from './components/index'
 import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       if (isLoaded) {
         setLoading(false);
       }
-    }, 6000)
+    }, 1000)
     return () => clearTimeout(timer)
   }, [isLoaded]);
 
@@ -34,7 +34,12 @@ function App() {
     </SignedOut>
 
     <SignedIn>
-      <SideNav />
+
+      <SideNav>
+        <HeaderInfo />
+        <InfoCards />
+      </SideNav>
+
     </SignedIn>
     <Footer />
   </>

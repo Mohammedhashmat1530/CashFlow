@@ -8,7 +8,8 @@ import Content3 from "./Content3";
 import Faq from "./Faq";
 import SideNav from "./SideNav";
 import LoadingScreen from "./LoadingScreen";
-
+import HeaderInfo from "./HeaderInfo";
+import InfoCards from "./InfoCards";
 
 export {
     Header,
@@ -20,7 +21,9 @@ export {
     Content3,
     Faq,
     SideNav,
-    LoadingScreen
+    LoadingScreen,
+    HeaderInfo,
+    InfoCards
     
     
 }

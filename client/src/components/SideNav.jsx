@@ -1,7 +1,7 @@
 import React from 'react'
 import { SignedIn, SignedOut, SignInButton, UserButton, useClerk } from "@clerk/clerk-react";
 
-const SideNav = () => {
+const SideNav = ({children}) => {
 
     const { signOut } = useClerk();
     console.log("ghere", signOut)
@@ -10,7 +10,8 @@ const SideNav = () => {
         await signOut()
     }
 
-    return (
+    return (<>
+        <div className='flex '>
         <div className="flex h-screen w-16 flex-col justify-between border-e gap-16 bg-white">
             <div>
                 <div className="inline-flex size-16 items-center justify-center">
@@ -248,7 +249,14 @@ const SideNav = () => {
 
                 </form>
             </div>
+           
         </div>
+
+        <div className='w-full'>
+            {children}
+        </div>
+        </div>
+        </>
     )
 }
 
