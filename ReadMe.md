@@ -2,7 +2,6 @@
 
 <ul>
     <li><s>User Authentication: Users can sign up, log in, and log out.</s></li>
-
     <li>Expense Logging : Users can add, edit, and delete expenses.</li>
     <li>Expense Categories : Categorize expenses (e.g., Food, Transportation, Entertainment).</li>
     <li>Expense Dashboard : Display expenses in a table with sorting and filtering options.</li>

@@ -1,16 +1,43 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
-import { Header,Announcement,Footer, Content } from './components/index'
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { Header, Announcement, Footer, Content, SideNav, LoadingScreen } from './components/index'
+import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
 function App() {
 
+  const [loading, setLoading] = useState(true);
+  const { isLoaded } = useAuth()
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (isLoaded) {
+        setLoading(false);
+      }
+    }, 6000)
+    return () => clearTimeout(timer)
+  }, [isLoaded]);
+
+  if (loading) {
+    return <>
+      <Header />
+      <LoadingScreen />
+      <Footer />
+    </>;
+  }
 
   return (<>
-    <Header/>
-    <Announcement />
-    <Content/>
-    <Footer/>
-    </>
+
+    <Header />
+
+    <SignedOut>
+      <Announcement />
+      <Content />
+    </SignedOut>
+
+    <SignedIn>
+      <SideNav />
+    </SignedIn>
+    <Footer />
+  </>
   )
 }
 
