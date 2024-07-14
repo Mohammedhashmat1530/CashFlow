@@ -6,15 +6,10 @@ function App() {
 
 
   return (<>
-
     <Header/>
     <Announcement />
     <Content/>
     <Footer/>
-    <header>
-      
-     
-    </header>
     </>
   )
 }

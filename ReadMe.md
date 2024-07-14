@@ -1,7 +1,7 @@
 ## ideas to be established in this CashFlow (finance tracker project)
 
 <ul>
-    <li>User Authentication:Users can sign up, log in, and log out.</li>
+    <li> ~~User Authentication:Users can sign up, log in, and log out.~~</li>
     <li>Expense Logging : Users can add, edit, and delete expenses.</li>
     <li>Expense Categories : Categorize expenses (e.g., Food, Transportation, Entertainment).</li>
     <li>Expense Dashboard : Display expenses in a table with sorting and filtering options.</li>
