@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Header, Announcement, Footer, Content, SideNav, LoadingScreen, HeaderInfo, InfoCards } from './components/index'
-import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
+import { Header,Footer,LoadingScreen,} from './components/index'
+import { useAuth } from "@clerk/clerk-react";
 import { Outlet } from 'react-router-dom';
 function App() {
 

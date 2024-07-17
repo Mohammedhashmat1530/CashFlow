@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import { Announcement,Content, SideNav,HeaderInfo,InfoCards,History,Account,Calendar,Analysis,Settings, Services,Contact,General } from './components/index'
-import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
+import {HeaderInfo,InfoCards,History,Account,Calendar,Analysis,Settings, Services,Contact,General } from './components/index'
+
 
 
 
@@ -69,59 +69,6 @@ const router = createBrowserRouter([
   }
 ])
 
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     children: [
-//       {
-//         path: '/',
-//         element: (
-//           <>
-//             <SignedOut>
-//               <Announcement />
-//               <Content />
-//             </SignedOut>
-
-//             <SignedIn>
-
-//             <HeaderInfo />
-//             <InfoCards />
-
-//             </SignedIn>
-//           </>
-//         )
-//       },
-//       {
-//         path: '/history',
-//         element: <History />
-//       },
-//       {
-//         path: '/account',
-//         element: <Account />
-//       },
-//       {
-//         path: '/calendar',
-//         element: <Calendar />
-//       },
-//       {
-//         path: '/analysis',
-//         element: <Analysis />
-//       },
-//       {
-//         path: '/settings',
-//         element: <Settings />
-//       },
-//       {
-//         path: '/services',
-//         element: <Services />
-//       },
-      
-      
-//     ]
-//   },
- 
-// ])
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
