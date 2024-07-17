@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Header, Announcement, Footer, Content, SideNav, LoadingScreen, HeaderInfo,InfoCards } from './components/index'
+import { Header, Announcement, Footer, Content, SideNav, LoadingScreen, HeaderInfo, InfoCards } from './components/index'
 import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
+import { Outlet } from 'react-router-dom';
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -26,21 +27,10 @@ function App() {
 
   return (<>
 
+
+    
     <Header />
-
-    <SignedOut>
-      <Announcement />
-      <Content />
-    </SignedOut>
-
-    <SignedIn>
-
-      <SideNav>
-        <HeaderInfo />
-        <InfoCards />
-      </SideNav>
-
-    </SignedIn>
+    <Outlet />
     <Footer />
   </>
   )

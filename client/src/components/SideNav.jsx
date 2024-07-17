@@ -1,5 +1,6 @@
 import React from 'react'
 import { SignedIn, SignedOut, SignInButton, UserButton, useClerk } from "@clerk/clerk-react";
+import { Link } from 'react-router-dom';
 
 const SideNav = ({children}) => {
 
@@ -23,8 +24,8 @@ const SideNav = ({children}) => {
                 <div className="border-t border-gray-100">
                     <div className="px-2">
                         <div className="py-4">
-                            <a
-                                href="#"
+                            <Link
+                                to="/"
                                 className="t group relative flex justify-center rounded bg-blue-50 px-2 py-1.5 text-blue-700"
                             >
                                 <svg
@@ -47,13 +48,13 @@ const SideNav = ({children}) => {
                                 >
                                     Dashboard
                                 </span>
-                            </a>
+                            </Link>
                         </div>
 
                         <ul className="space-y-1 border-t border-gray-100 pt-4">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/history"
                                     className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                                 >
                                     <svg
@@ -73,12 +74,12 @@ const SideNav = ({children}) => {
                                     >
                                         History
                                     </span>
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/account"
                                     className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                                 >
                                     <svg
@@ -101,13 +102,13 @@ const SideNav = ({children}) => {
                                     >
                                         Account
                                     </span>
-                                </a>
+                                </Link>
                             </li>
 
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/calendar"
                                     className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                                 >
                                     <svg
@@ -126,13 +127,13 @@ const SideNav = ({children}) => {
                                     >
                                         Calender
                                     </span>
-                                </a>
+                                </Link>
                             </li>
 
 
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/analysis"
                                     className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                                 >
                                     <svg
@@ -176,11 +177,11 @@ const SideNav = ({children}) => {
                                     >
                                         analysis
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/settings"
                                     className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                                 >
                                     <svg
@@ -208,7 +209,7 @@ const SideNav = ({children}) => {
                                     >
                                         general settings
                                     </span>
-                                </a>
+                                </Link>
                             </li>
 
 

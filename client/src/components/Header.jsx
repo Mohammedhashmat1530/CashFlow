@@ -1,5 +1,6 @@
 import React from 'react'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -22,12 +23,12 @@ const Header = () => {
 
 
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
+                                    <Link className="text-gray-500 transition hover:text-gray-500/75" to="/services"> Services </Link>
                                 </li>
 
 
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Contact </a>
+                                    <Link className="text-gray-500 transition hover:text-gray-500/75" to="/contact"> Contact </Link>
                                 </li>
 
                             </ul>

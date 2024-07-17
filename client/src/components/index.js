@@ -10,6 +10,14 @@ import SideNav from "./SideNav";
 import LoadingScreen from "./LoadingScreen";
 import HeaderInfo from "./HeaderInfo";
 import InfoCards from "./InfoCards";
+import History from "./History";
+import Account from "./Account";
+import Calendar from "./Calendar";
+import Analysis from "./Analysis";
+import Settings from "./Settings";
+import Services from "./Services";
+import Contact from "./Contact";
+import General from "./General";
 
 export {
     Header,
@@ -23,7 +31,15 @@ export {
     SideNav,
     LoadingScreen,
     HeaderInfo,
-    InfoCards
+    InfoCards,
+    History,
+    Account,
+    Calendar,
+    Analysis,
+    Settings,
+    Services,
+    Contact,
+    General
     
     
 }
