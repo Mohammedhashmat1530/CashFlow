@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import {HeaderInfo,InfoCards,History,Account,Calendar,Analysis,Settings, Services,Contact,General } from './components/index'
+import {HeaderInfo,InfoCards,History,Account,Calendar,Analysis,Settings, Services,Contact,General,AddExpense } from './components/index'
 
 
 
@@ -60,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: '/services',
         element: <Services />
+      },
+      {
+        path: '/addExpense',
+        element: <AddExpense />
       },
       
       

@@ -7,7 +7,7 @@ const ConnectDB = async() =>{
         if(Db){
             console.log("db connected")
         }
-    } catch (error) {
+    } catch (err) {
         console.error("error is in DB chusko",err.message);
     }
 }

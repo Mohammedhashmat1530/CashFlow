@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Header,Footer,LoadingScreen,} from './components/index'
+import { Header, Footer, LoadingScreen, } from './components/index'
 import { useAuth } from "@clerk/clerk-react";
 import { Outlet } from 'react-router-dom';
 function App() {
 
   const [loading, setLoading] = useState(true);
+
   const { isLoaded } = useAuth()
 
   useEffect(() => {
@@ -17,9 +18,11 @@ function App() {
     return () => clearTimeout(timer)
   }, [isLoaded]);
 
+
   if (loading) {
     return <>
       <Header />
+  
       <LoadingScreen />
       <Footer />
     </>;
@@ -28,7 +31,6 @@ function App() {
   return (<>
 
 
-    
     <Header />
     <Outlet />
     <Footer />

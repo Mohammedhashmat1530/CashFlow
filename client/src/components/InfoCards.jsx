@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const InfoCards = () => {
     return (
@@ -54,7 +55,8 @@ const InfoCards = () => {
                         </div>
                     </div>
                     <div className='bg-customColor-Red h-full flex pl-1 rounded-r-md pr-1'>
-                            <button type='submit' className='text-white '>Add</button>
+                            {/* <button type='submit' className='text-white '>Add</button> */}
+                            <Link to='/addExpense' className='text-white  flex items-center'>Add</Link>
                     </div>
                 </div>
                 <div className='flex shadow-lg m-3 gap-3 mr-24 mb-0 mt-0 rounded-lg border-2 hover:border-2 hover:border-customColor-Red'>

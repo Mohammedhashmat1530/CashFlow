@@ -18,6 +18,7 @@ import Settings from "./Settings";
 import Services from "./Services";
 import Contact from "./Contact";
 import General from "./General";
+import AddExpense from "./AddExpense";
 
 export {
     Header,
@@ -39,7 +40,8 @@ export {
     Settings,
     Services,
     Contact,
-    General
+    General,
+    AddExpense
     
     
 }
